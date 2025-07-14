@@ -1,1 +1,37 @@
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.button, .back-link, button {
+  background-color: #238636;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px 5px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+textarea {
+  width: 80%;
+  padding: 10px;
+  background: #161b22;
+  color: #fff;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  resize: none;
+}
 
