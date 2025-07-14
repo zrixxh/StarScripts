@@ -1,3 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  overflow-x: hidden;
+  position: relative;
+}
+
+canvas#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main-button, .back-link, button {
+  background-color: #238636;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 20px 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.main-button:hover, .back-link:hover, button:hover {
+  background-color: #2ea043;
+}
+
+.script-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 800px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(36, 198, 255, 0.1);
+}
+
+.script-card textarea {
+  width: 100%;
+  height: 100px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  resize: none;
+  padding: 10px;
+  font-family: monospace;
+  margin: 10px 0;
+}
+
+.review {
+  font-style: italic;
+  color: #8b949e;
+}
+
 footer {
   margin-top: 50px;
   color: #8b949e;
