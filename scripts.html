@@ -7,20 +7,42 @@
 </head>
 <body>
   <div class="container">
-    <h1>📜 Copy Your Script</h1>
-    <textarea id="scriptBox" rows="10" cols="50">// Paste your Roblox script here</textarea><br>
-    <button onclick="copyScript()">Copy Script</button>
+    <h1>📜 Roblox Game Scripts</h1>
+
+    <div class="script-card">
+      <h2>Phantom Forces</h2>
+      <textarea readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/SSN31/test/refs/heads/main/PhantomForc-NexaHub3131"))()</textarea>
+      <button onclick="copyScript(this)">Copy Script</button>
+      <p>👍 1,254 Likes</p>
+      <p class="review">⭐ “This script works perfectly and never lags. 10/10!”</p>
+    </div>
+
+    <div class="script-card">
+      <h2>Fisch</h2>
+      <textarea readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/cayden305/Scripts/refs/heads/main/FischObfuscated.lua"))()</textarea>
+      <button onclick="copyScript(this)">Copy Script</button>
+      <p>👍 932 Likes</p>
+      <p class="review">⭐ “Insane features and no ban so far. Highly recommend!”</p>
+    </div>
+
+    <div class="script-card">
+      <h2>INK GAMES</h2>
+      <textarea readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/InkGame"))()</textarea>
+      <button onclick="copyScript(this)">Copy Script</button>
+      <p>👍 1,045 Likes</p>
+      <p class="review">⭐ “One of the cleanest scripts I’ve used. Works like a charm!”</p>
+    </div>
+
     <a class="back-link" href="index.html">← Back to Main Page</a>
   </div>
 
   <script>
-    function copyScript() {
-      const scriptBox = document.getElementById("scriptBox");
-      scriptBox.select();
+    function copyScript(btn) {
+      const textarea = btn.previousElementSibling;
+      textarea.select();
       document.execCommand("copy");
       alert("Script copied to clipboard!");
     }
   </script>
 </body>
 </html>
-
