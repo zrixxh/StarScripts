@@ -6,42 +6,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>📜 Roblox Game Scripts</h1>
+  <div class="main-container">
+    <h1>🧠 Roblox Scripts</h1>
 
     <div class="script-card">
       <h2>Phantom Forces</h2>
       <textarea readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/SSN31/test/refs/heads/main/PhantomForc-NexaHub3131"))()</textarea>
-      <button onclick="copyScript(this)">Copy Script</button>
+      <button onclick="copyText(this)">📋 Copy</button>
       <p>👍 1,254 Likes</p>
-      <p class="review">⭐ “This script works perfectly and never lags. 10/10!”</p>
+      <p class="review">⭐ “This script is smooth and super OP!”</p>
     </div>
 
     <div class="script-card">
       <h2>Fisch</h2>
       <textarea readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/cayden305/Scripts/refs/heads/main/FischObfuscated.lua"))()</textarea>
-      <button onclick="copyScript(this)">Copy Script</button>
+      <button onclick="copyText(this)">📋 Copy</button>
       <p>👍 932 Likes</p>
-      <p class="review">⭐ “Insane features and no ban so far. Highly recommend!”</p>
+      <p class="review">⭐ “Legit and works like a charm. Worth it!”</p>
     </div>
 
     <div class="script-card">
       <h2>INK GAMES</h2>
       <textarea readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/InkGame"))()</textarea>
-      <button onclick="copyScript(this)">Copy Script</button>
+      <button onclick="copyText(this)">📋 Copy</button>
       <p>👍 1,045 Likes</p>
-      <p class="review">⭐ “One of the cleanest scripts I’ve used. Works like a charm!”</p>
+      <p class="review">⭐ “Clean UI, fast execution. I love this one.”</p>
     </div>
 
     <a class="back-link" href="index.html">← Back to Main Page</a>
   </div>
 
   <script>
-    function copyScript(btn) {
+    function copyText(btn) {
       const textarea = btn.previousElementSibling;
       textarea.select();
+      textarea.setSelectionRange(0, 99999);
       document.execCommand("copy");
-      alert("Script copied to clipboard!");
+      alert("Copied to clipboard!");
     }
   </script>
 </body>
