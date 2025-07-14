@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Scripts – Roblox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📜 Copy Your Script</h1>
+    <textarea id="scriptBox" rows="10" cols="50">// Paste your Roblox script here</textarea><br>
+    <button onclick="copyScript()">Copy Script</button>
+    <a class="back-link" href="index.html">← Back to Main Page</a>
+  </div>
+
+  <script>
+    function copyScript() {
+      const scriptBox = document.getElementById("scriptBox");
+      scriptBox.select();
+      document.execCommand("copy");
+      alert("Script copied to clipboard!");
+    }
+  </script>
+</body>
+</html>
 
